@@ -213,15 +213,15 @@
  * @endcode
  */
 $databases = array (
-  'default' => 
+  'default' =>
   array (
-    'default' => 
+    'default' =>
     array (
       'database' => 'cooking_blog_database',
       'username' => 'cooking_admin',
       'password' => 'cookingdrupaldrupal',
-      'host' => 'localhost',
-      'port' => '',
+      'host' => '127.0.0.1',
+      'port' => '8889',
       'driver' => 'mysql',
       'prefix' => '',
     ),
