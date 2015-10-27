@@ -1,7 +1,6 @@
 <?php
 
 function simplify_display_form_alter(&$form, &$form_state, $form_id) {
-  dpm($form);
   $form_ids = array(
     'recipe_node_form',
     'awards_node_form',
@@ -11,12 +10,12 @@ function simplify_display_form_alter(&$form, &$form_state, $form_id) {
 
   if(in_array($form_id, $form_ids)) {
     $form['revision_information']['#type'] = 'hidden';
-    $form['path']['#type'] = 'hidden';
-    $form['comment_settings']['#type'] = 'hidden';
-    $form['author']['#type'] = 'hidden';
-    $form['options']['#type'] = 'hidden';
+    $form['path']['#type']                 = 'hidden';
+    $form['comment_settings']['#type']     = 'hidden';
+    $form['author']['#type']               = 'hidden';
+    $form['options']['#type']              = 'hidden';
 
-    $form['menu']['#type'] = 'hidden';
+    $form['menu']['#type']                 = 'hidden';
 
     // Default value for comments is closed
     $form['comment_settings']['comment']['#default_value'] = 1;
