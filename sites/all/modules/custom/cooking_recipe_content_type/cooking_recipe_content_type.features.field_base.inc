@@ -91,25 +91,30 @@ function cooking_recipe_content_type_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_tag'.
-  $field_bases['field_tag'] = array(
+  // Exported field_base: 'field_recipe_tags'.
+  $field_bases['field_recipe_tags'] = array(
     'active' => 1,
     'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_tag',
+    'field_name' => 'field_recipe_tags',
     'indexes' => array(
-      'format' => array(
-        0 => 'format',
+      'tid' => array(
+        0 => 'tid',
       ),
     ),
     'locked' => 0,
-    'module' => 'text',
+    'module' => 'taxonomy',
     'settings' => array(
-      'max_length' => 255,
+      'allowed_values' => array(
+        0 => array(
+          'vocabulary' => 'tags',
+          'parent' => 0,
+        ),
+      ),
     ),
     'translatable' => 0,
-    'type' => 'text',
+    'type' => 'taxonomy_term_reference',
   );
 
   return $field_bases;

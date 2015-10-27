@@ -180,18 +180,18 @@ function cooking_recipe_content_type_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-recipe-field_tag'.
-  $field_instances['node-recipe-field_tag'] = array(
+  // Exported field_instance: 'node-recipe-field_recipe_tags'.
+  $field_instances['node-recipe-field_recipe_tags'] = array(
     'bundle' => 'recipe',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Add a tag for Search Engine Optimization.',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
+        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'taxonomy_term_reference_link',
         'weight' => 5,
       ),
       'teaser' => array(
@@ -202,20 +202,20 @@ function cooking_recipe_content_type_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_tag',
+    'field_name' => 'field_recipe_tags',
     'label' => 'Tags',
     'required' => 0,
     'settings' => array(
-      'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
-      'active' => 1,
-      'module' => 'text',
+      'active' => 0,
+      'module' => 'taxonomy',
       'settings' => array(
+        'autocomplete_path' => 'taxonomy/autocomplete',
         'size' => 60,
       ),
-      'type' => 'text_textfield',
+      'type' => 'taxonomy_autocomplete',
       'weight' => 5,
     ),
   );
@@ -223,7 +223,6 @@ function cooking_recipe_content_type_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('A brief description of this recipe.');
-  t('Add a tag for Search Engine Optimization.');
   t('Add ingredients one at a time.');
   t('Description');
   t('Final Picture');
