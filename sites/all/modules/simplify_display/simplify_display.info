@@ -1,0 +1,5 @@
+name = Simplify Display
+description = Simplifies content type menus for non-developers.
+package = Custom
+core = 7.x
+files[] = simplify_display.module

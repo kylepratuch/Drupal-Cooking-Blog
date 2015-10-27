@@ -1,0 +1,15 @@
+<?php
+
+function simplify_display_form_alter(&$form, &$form_state, $form_id) {
+  dpm($form);
+  if($form_id == 'awards_node_form') {
+    $form['revision_information']['#type'] = 'hidden';
+    $form['path']['#type'] = 'hidden';
+    $form['comment_settings']['#type'] = 'hidden';
+    $form['author']['#type'] = 'hidden';
+    $form['options']['#type'] = 'hidden';
+
+    // Default value for comments is closed
+    $form['comment_settings']['comment']['#default_value'] = 1;
+  }
+}
