@@ -1,18 +1,18 @@
 <?php
 /**
  * @file
- * awards_and_reviews.features.inc
+ * cooking_tip_content_type.features.inc
  */
 
 /**
  * Implements hook_node_info().
  */
-function awards_and_reviews_node_info() {
+function cooking_tip_content_type_node_info() {
   $items = array(
-    'awards' => array(
-      'name' => t('Awards'),
+    'tip' => array(
+      'name' => t('Tip'),
       'base' => 'node_content',
-      'description' => t('Awards or reviews for my books and recipes.'),
+      'description' => t('Use Tip for quick tips \'n tricks.'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',

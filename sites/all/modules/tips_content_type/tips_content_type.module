@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Tips Content Type feature.
- */
-
-include_once 'tips_content_type.features.inc';

@@ -1,8 +1,8 @@
-name = Tips Content Type
-description = Tips and Tricks Custom Content Type
+name = Cooking Tip Content Type
+description = Custom content type for tips and tricks
 core = 7.x
 package = Content Types
-version = 7.x-1.0
+version = 7.x-1.1
 dependencies[] = features
 dependencies[] = image
 dependencies[] = text

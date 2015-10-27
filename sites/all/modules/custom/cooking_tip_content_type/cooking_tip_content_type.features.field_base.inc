@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * tips_content_type.features.field_base.inc
+ * cooking_tip_content_type.features.field_base.inc
  */
 
 /**
  * Implements hook_field_default_field_bases().
  */
-function tips_content_type_field_default_field_bases() {
+function cooking_tip_content_type_field_default_field_bases() {
   $field_bases = array();
 
   // Exported field_base: 'body'.

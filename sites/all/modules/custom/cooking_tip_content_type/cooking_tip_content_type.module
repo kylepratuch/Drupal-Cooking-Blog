@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Cooking Tip Content Type feature.
+ */
+
+include_once 'cooking_tip_content_type.features.inc';

@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * awards_and_reviews.features.field_instance.inc
+ * cooking_award_content_type.features.field_instance.inc
  */
 
 /**
  * Implements hook_field_default_field_instances().
  */
-function awards_and_reviews_field_default_field_instances() {
+function cooking_award_content_type_field_default_field_instances() {
   $field_instances = array();
 
   // Exported field_instance: 'node-awards-field_author'.

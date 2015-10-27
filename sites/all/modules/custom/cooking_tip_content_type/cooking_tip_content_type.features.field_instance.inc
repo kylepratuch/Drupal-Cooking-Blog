@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * tips_content_type.features.field_instance.inc
+ * cooking_tip_content_type.features.field_instance.inc
  */
 
 /**
  * Implements hook_field_default_field_instances().
  */
-function tips_content_type_field_default_field_instances() {
+function cooking_tip_content_type_field_default_field_instances() {
   $field_instances = array();
 
   // Exported field_instance: 'node-tip-body'.

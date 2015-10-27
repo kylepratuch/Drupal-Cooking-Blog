@@ -1,8 +1,8 @@
-name = Recipe Content Type
-description = Add a custom content type for recipes.
+name = Cooking Recipe Content Type
+description = Custom content type for recipe
 core = 7.x
 package = Content Types
-version = 7.x-1.0
+version = 7.x-1.1
 dependencies[] = features
 dependencies[] = image
 dependencies[] = text

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Cooking Award Content Type feature.
+ */
+
+include_once 'cooking_award_content_type.features.inc';

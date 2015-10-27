@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * recipe_content_type.features.field_instance.inc
+ * cooking_recipe_content_type.features.field_instance.inc
  */
 
 /**
  * Implements hook_field_default_field_instances().
  */
-function recipe_content_type_field_default_field_instances() {
+function cooking_recipe_content_type_field_default_field_instances() {
   $field_instances = array();
 
   // Exported field_instance: 'node-recipe-field_description'.
