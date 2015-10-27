@@ -1,0 +1,17 @@
+name = Awards and Reviews
+core = 7.x
+package = Content Types
+version = 7.x-1.0
+dependencies[] = features
+dependencies[] = image
+dependencies[] = text
+features[features_api][] = api:2
+features[field_base][] = field_author
+features[field_base][] = field_award_pic
+features[field_base][] = field_link
+features[field_base][] = field_quote
+features[field_instance][] = node-awards-field_author
+features[field_instance][] = node-awards-field_award_pic
+features[field_instance][] = node-awards-field_link
+features[field_instance][] = node-awards-field_quote
+features[node][] = awards

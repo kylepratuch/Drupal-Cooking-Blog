@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Awards and Reviews feature.
+ */
+
+include_once 'awards_and_reviews.features.inc';
