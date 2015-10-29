@@ -47,9 +47,10 @@ p {
   margin-bottom: 10px;
 }
 
-#block-user-login {
+#block-user-login, article {
   background: #ededed;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  margin: 4px;
 }

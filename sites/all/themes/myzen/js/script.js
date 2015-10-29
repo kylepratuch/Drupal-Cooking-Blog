@@ -19,6 +19,12 @@ Drupal.behaviors.my_custom_behavior = {
 
     // Place your code here.
 
+    jQuery(document).ready(function() {
+
+      jQuery("article").click(function() {
+        jQuery(this).addClass("animated shake");
+      });
+    });
   }
 };
 
